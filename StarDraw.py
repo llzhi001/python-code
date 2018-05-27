@@ -1,3 +1,4 @@
+#coding=utf-8
 from turtle import *
 color('red','red')
 begin_fill()
