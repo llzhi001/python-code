@@ -6,7 +6,7 @@ t.pencolor("red")
 t.pensize(5)
 #数据读取
 datals = []
-f = open("/Users/fangjiaqi/github/python-code/basic/week7/data.txt")
+f = open("data.txt")
 for line in f:
     line = line.replace("\n","")
     datals.append(list(map(eval, line.split(","))))
