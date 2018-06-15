@@ -1,6 +1,6 @@
-from twython import Iwython,IwythonError
+from twython import Twython,TwythonError
 
-twitter = Iwython(app_key = '', app_secret='')
+twitter = Twython(app_key = '', app_secret='')
 
 data = twitter.search(q='bigdata', count =5)
 print(data)
