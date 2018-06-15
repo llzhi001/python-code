@@ -18,7 +18,7 @@ status_json = sina.send_request('api接口')
 status_json
 
 #2.store response results into database
-from sqlalchemy import create_engine，MetaData
+from sqlalchemy import create_engine,MetaData
 from sqlalchemy.orm import sessionmaker
 
 engine = create_engine('postgresql://postgres:123@localhost:5432/postgres')
@@ -26,12 +26,12 @@ meta = MetaData(bind=engine)
 Session = sessionmaker(bind=engine)
 session = Session
 
-from sqlalchemy import Table,Column,String,Text,DataTime
+from sqlalchemy import Table,Column,String,Text,DateTime
 weibo_table = Table('t_weibo',meta,
                     Column('id',String,primary_key=True),
                     Column('user_id', String),
                     Column('text', Text),
-                    Column('created_at', DataTime())
+                    Column('created_at', DateTime())
                     )
 meta.create_all()
 
