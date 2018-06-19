@@ -1,7 +1,7 @@
 #GovRptWordCloudV1.py
 import jieba
 import wordcloud
-from scipy.misc imread
+from scipy.misc import imread
 mask = imread("fivestar.png")
 f = open("新时代中国特色社会主义.txt", "r", encoding="utf-8")
 t = f.read()

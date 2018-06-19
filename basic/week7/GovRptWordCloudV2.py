@@ -1,7 +1,7 @@
 #GovRptWordCloudV2.py
 import jieba
 import wordcloud
-from scipy.misc imread
+from scipy.misc import imread
 mask = imread("fivestar.png")
 f = open("关于实施乡村振兴战略的意见.txt", "r", encoding="utf-8")
 t = f.read()
