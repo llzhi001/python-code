@@ -16,9 +16,9 @@ def getHTMLText(url, code="utf-8"):
         return ""
 
 def main():
-    for book in soup.find_all('book'):
-        school_list_url = 'http://www.mhedu.sh.cn/school/list.jsp?cur_page={}&tm_id=475&xdfl=19&sdjd=&djjb=&jbzlx=&xxmc='
-        getHTMLText(school_list_url)
+    for n in range(20):
+        school_list_url = 'http://www.mhedu.sh.cn/school/list.jsp?cur_page={}&tm_id=475&xdfl=19&sdjd=&djjb=&jbzlx=&xxmc='.format(n)
+        s = getHTMLText(school_list_url)
     print(s)
 
 main()
