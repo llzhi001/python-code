@@ -6,6 +6,7 @@ import time
 def spider(the_url):
     hea = {"user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"}
     r = requests.get(the_url, headers=hea)
+    time.sleep(2)
     return r.json()
 
 def get_all_url(page_num):
