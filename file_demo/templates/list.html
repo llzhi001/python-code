@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    列表页
+</body>
+</html>
+<script language="jscript">
+    function displayXml() {
+        var xmldoc = new ActiveXObject("MSXML2.DOMDocument.3.0");
+        xmldoc.loadXML("<root><child></child></root>");
+        alert(xmldoc.xml)
+    }
+</script>
