@@ -5,7 +5,7 @@ import time
 check_url = 'http://www.finndy.com/midycp.php?action=profile'
 
 # 记录程序运行时的时间
-fp = open('auto_signon_finndy.log','a')
+fp = open('./auto_signon_finndy.log','a')
 ISOTIMEFORMAT='%Y-%m-%d %X'
 curtime = time.strftime( ISOTIMEFORMAT, time.localtime( time.time() ) )
 print('at %s'%curtime)
