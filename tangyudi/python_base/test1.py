@@ -24,8 +24,8 @@ my_list = []
 for i in range(3):
     x = int(input('input :'))
     my_list.append(x)
-my_list.sort()
-my_list
+my_list = my_list.sort()
+print(my_list)
 
 #4.将一个列表的数据复制到另一个列表中
 
