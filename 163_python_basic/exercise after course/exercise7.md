@@ -205,6 +205,25 @@ class FirstClass:
     def staticfoo():
         print("静态方法staticfoo")
 
+习题讲解
+【代码分析】
+
+class FirstClass:
+    print("FirstClass")
+    def __init__(self):
+        print("__init__")
+    
+    def objfoo(self):
+        print("实例方法objfoo")
+
+    def foo():
+        print("自由方法foo")
+
+    @staticmethod
+    def staticfoo():
+        print("静态方法staticfoo")
+类对象中的语句会被执行，其中定义的函数不会被执行。
+
 2.Python最小类
 描述
 编写一个Python最小类，类的名字是LeastClass，其类描述的内容为：‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬
