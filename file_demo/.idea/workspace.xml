@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="047e2015-3ca4-43f3-a09f-281ec617a49f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="047e2015-3ca4-43f3-a09f-281ec617a49f" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +16,10 @@
     <session id="-201697256">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.8" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -66,8 +64,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1702" />
-    <option name="y" value="-589" />
+    <option name="x" value="61" />
+    <option name="y" value="67" />
     <option name="width" value="1318" />
     <option name="height" value="752" />
   </component>
@@ -205,7 +203,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1702" y="-589" width="1318" height="752" extended-state="0" />
+    <frame x="61" y="67" width="1318" height="752" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.257837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
