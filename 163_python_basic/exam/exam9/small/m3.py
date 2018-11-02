@@ -1,2 +1,2 @@
 def echo():
-    return "这是m3模块"
+    print("这是m3模块")
