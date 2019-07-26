@@ -5,6 +5,7 @@ author：邢不行
 
 本节课讲解如何结合预测者网的历史数据，每天获取股票的数据，
 构建完整实时股票数据库。
+修改：哈库拉马塔塔
 """
 from urllib.request import urlopen  # python自带爬虫库
 import pandas as pd
