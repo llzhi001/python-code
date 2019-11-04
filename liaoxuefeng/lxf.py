@@ -90,11 +90,11 @@ def get_url_list():
 
 
 def save_pdf(htmls, file_name):
-    """ 
-    把所有html文件保存到pdf文件 
-    :param htmls:  html文件列表 
-    :param file_name: pdf文件名 
-    :return: 
+    """
+    把所有html文件保存到pdf文件
+    :param htmls:  html文件列表
+    :param file_name: pdf文件名
+    :return:
     """
     options = {
         'page-size': 'Letter',
