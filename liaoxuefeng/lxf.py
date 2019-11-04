@@ -6,9 +6,9 @@ import pdfkit
 import requests
 from bs4 import BeautifulSoup
 from PyPDF2 import PdfFileMerger
-import sys
-reload(sys)
-sys.setdefaultencoding('utf8')
+#import sys
+#reload(sys)
+#sys.setdefaultencoding('utf8')
 
 html_template = """
 <!DOCTYPE html>
@@ -66,15 +66,15 @@ def parse_url_to_html(url, name):
         return name
 
     except Exception as e:
-        print "解析错误！"
+        print ("解析错误！")
 
 #----------------------------------------------------------------------
 
 
 def get_url_list():
-    """ 
-    获取所有URL目录列表 
-    :return: 
+    """
+    获取所有URL目录列表
+    :return:
     """
     response = requests.get(
         "http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000")
@@ -131,25 +131,25 @@ def main():
 
         save_pdf(str(i)+'.html', file_name+str(i)+'.pdf')
 
-        print u"转换完成第"+str(i)+'个html'
+        print (u"转换完成第"+str(i)+'个html')
 
     merger = PdfFileMerger()
     for pdf in pdfs:
         merger.append(open(pdf, 'rb'))
-        print u"合并完成第"+str(i)+'个pdf'+pdf
+        print (u"合并完成第"+str(i)+'个pdf'+pdf)
 
     output = open(u"廖雪峰Python_all.pdf", "wb")
     merger.write(output)
 
-    print u"输出PDF成功！"
+    print (u"输出PDF成功！")
 
     for html in htmls:
         os.remove(html)
-        print u"删除临时文件"+html
+        print (u"删除临时文件"+html)
 
     for pdf in pdfs:
         os.remove(pdf)
-        print u"删除临时文件"+pdf
+        print (u"删除临时文件"+pdf)
 
     total_time = time.time() - start
     print(u"总共耗时：%f 秒" % total_time)
